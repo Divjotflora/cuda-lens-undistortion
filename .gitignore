@@ -1,0 +1,10 @@
+# build products
+bin/
+build/
+# generated datasets and full-size outputs (reproducible with ./run.sh)
+data/
+data_large/
+output/corrected/
+output/corrected_large/
+artifacts.tar.gz
+__pycache__/
