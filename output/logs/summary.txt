@@ -1,0 +1,69 @@
+output/logs/cpu_reference.log:backend            : cpu (bilinear)
+output/logs/cpu_reference.log:images processed   : 20 of 20 (1 distinct size)
+output/logs/cpu_reference.log:wall time          : 259.4 ms  (77.1 images/s, 37.0 MP/s end-to-end incl. disk I/O)
+output/logs/cpu_reference.log:compute time       : 165.42 ms total, 8.271 ms/image, 58.0 MP/s
+output/logs/cpu_reference.log:PSNR vs truth      : distorted input 8.75 dB -> corrected 30.48 dB (mean of 20)
+output/logs/cpu_reference.log:result             : OK
+output/logs/kernel_fused.log:backend            : kernel_fused (bilinear)
+output/logs/kernel_fused.log:images processed   : 200 of 200 (1 distinct size)
+output/logs/kernel_fused.log:wall time          : 1082.5 ms  (184.8 images/s, 88.7 MP/s end-to-end incl. disk I/O)
+output/logs/kernel_fused.log:compute time       : 7.10 ms total, 0.036 ms/image, 13520.2 MP/s
+output/logs/kernel_fused.log:H2D + D2H copies   : 50.37 ms total
+output/logs/kernel_fused.log:PSNR vs truth      : distorted input 9.08 dB -> corrected 30.90 dB (mean of 200)
+output/logs/kernel_fused.log:verify vs CPU      : 16 images, max |diff| 1, worst mean |diff| 0.0001 -> PASS (tolerance 2)
+output/logs/kernel_fused.log:speed-up vs 1 CPU  : 221.4x (compute only, on the verified images: CPU 8.45 ms vs GPU 0.038 ms)
+output/logs/kernel_fused.log:result             : OK
+output/logs/kernel_map.log:backend            : kernel_map (bilinear)
+output/logs/kernel_map.log:images processed   : 200 of 200 (1 distinct size)
+output/logs/kernel_map.log:wall time          : 1365.4 ms  (146.5 images/s, 70.3 MP/s end-to-end incl. disk I/O)
+output/logs/kernel_map.log:compute time       : 12.46 ms total, 0.062 ms/image, 7707.6 MP/s
+output/logs/kernel_map.log:H2D + D2H copies   : 51.40 ms total
+output/logs/kernel_map.log:PSNR vs truth      : distorted input 9.08 dB -> corrected 30.90 dB (mean of 200)
+output/logs/kernel_map.log:verify vs CPU      : 16 images, max |diff| 1, worst mean |diff| 0.0001 -> PASS (tolerance 2)
+output/logs/kernel_map.log:speed-up vs 1 CPU  : 155.6x (compute only, on the verified images: CPU 8.34 ms vs GPU 0.054 ms)
+output/logs/kernel_map.log:result             : OK
+output/logs/large_kernel_map.log:backend            : kernel_map (bilinear)
+output/logs/large_kernel_map.log:images processed   : 20 of 20 (1 distinct size)
+output/logs/large_kernel_map.log:wall time          : 628.2 ms  (31.8 images/s, 117.4 MP/s end-to-end incl. disk I/O)
+output/logs/large_kernel_map.log:compute time       : 6.78 ms total, 0.339 ms/image, 10868.7 MP/s
+output/logs/large_kernel_map.log:H2D + D2H copies   : 35.53 ms total
+output/logs/large_kernel_map.log:verify vs CPU      : 4 images, max |diff| 1, worst mean |diff| 0.0000 -> PASS (tolerance 2)
+output/logs/large_kernel_map.log:speed-up vs 1 CPU  : 203.7x (compute only, on the verified images: CPU 69.29 ms vs GPU 0.340 ms)
+output/logs/large_kernel_map.log:result             : OK
+output/logs/npp.log:backend            : npp (bilinear)
+output/logs/npp.log:images processed   : 200 of 200 (1 distinct size)
+output/logs/npp.log:wall time          : 1129.6 ms  (177.1 images/s, 85.0 MP/s end-to-end incl. disk I/O)
+output/logs/npp.log:compute time       : 40.51 ms total, 0.203 ms/image, 2369.6 MP/s
+output/logs/npp.log:H2D + D2H copies   : 50.32 ms total
+output/logs/npp.log:PSNR vs truth      : distorted input 9.08 dB -> corrected 30.90 dB (mean of 200)
+output/logs/npp.log:verify vs CPU      : 16 images, max |diff| 1, worst mean |diff| 0.0001 -> PASS (NPP tolerance: mean <= 1.0)
+output/logs/npp.log:speed-up vs 1 CPU  : 4.1x (compute only, on the verified images: CPU 8.29 ms vs GPU 2.001 ms)
+output/logs/npp.log:result             : OK
+output/logs/streams_1.log:backend            : kernel_map (bilinear)
+output/logs/streams_1.log:images processed   : 200 of 200 (1 distinct size)
+output/logs/streams_1.log:wall time          : 946.7 ms  (211.3 images/s, 101.4 MP/s end-to-end incl. disk I/O)
+output/logs/streams_1.log:compute time       : 8.97 ms total, 0.045 ms/image, 10700.3 MP/s
+output/logs/streams_1.log:H2D + D2H copies   : 50.49 ms total
+output/logs/streams_1.log:PSNR vs truth      : distorted input 9.08 dB -> corrected 30.90 dB (mean of 200)
+output/logs/streams_1.log:result             : OK
+output/logs/streams_2.log:backend            : kernel_map (bilinear)
+output/logs/streams_2.log:images processed   : 200 of 200 (1 distinct size)
+output/logs/streams_2.log:wall time          : 926.4 ms  (215.9 images/s, 103.6 MP/s end-to-end incl. disk I/O)
+output/logs/streams_2.log:compute time       : 9.56 ms total, 0.048 ms/image, 10036.8 MP/s
+output/logs/streams_2.log:H2D + D2H copies   : 49.77 ms total
+output/logs/streams_2.log:PSNR vs truth      : distorted input 9.08 dB -> corrected 30.90 dB (mean of 200)
+output/logs/streams_2.log:result             : OK
+output/logs/streams_4.log:backend            : kernel_map (bilinear)
+output/logs/streams_4.log:images processed   : 200 of 200 (1 distinct size)
+output/logs/streams_4.log:wall time          : 899.4 ms  (222.4 images/s, 106.7 MP/s end-to-end incl. disk I/O)
+output/logs/streams_4.log:compute time       : 8.93 ms total, 0.045 ms/image, 10751.7 MP/s
+output/logs/streams_4.log:H2D + D2H copies   : 51.44 ms total
+output/logs/streams_4.log:PSNR vs truth      : distorted input 9.08 dB -> corrected 30.90 dB (mean of 200)
+output/logs/streams_4.log:result             : OK
+output/logs/streams_8.log:backend            : kernel_map (bilinear)
+output/logs/streams_8.log:images processed   : 200 of 200 (1 distinct size)
+output/logs/streams_8.log:wall time          : 900.4 ms  (222.1 images/s, 106.6 MP/s end-to-end incl. disk I/O)
+output/logs/streams_8.log:compute time       : 8.10 ms total, 0.040 ms/image, 11857.7 MP/s
+output/logs/streams_8.log:H2D + D2H copies   : 50.26 ms total
+output/logs/streams_8.log:PSNR vs truth      : distorted input 9.08 dB -> corrected 30.90 dB (mean of 200)
+output/logs/streams_8.log:result             : OK

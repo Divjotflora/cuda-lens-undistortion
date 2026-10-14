@@ -1,0 +1,36 @@
+=========== CUDA lens undistort ===========
+input              : data/distorted (20 images)
+output             : (not written)
+lens               : focal_scale=0.6000 k1=-0.28000 k2=0.07000 k3=0.00000 p1=0.00150 p2=-0.00100 zoom=1.000
+backend / interp   : cpu / bilinear
+[   1/20] frame_0000.ppm           800x600   compute    8.126 ms  PSNR  7.55 -> 28.25 dB
+[   2/20] frame_0001.ppm           800x600   compute    8.002 ms  PSNR  7.87 -> 30.21 dB
+[   3/20] frame_0002.ppm           800x600   compute    8.056 ms  PSNR 11.59 -> 34.20 dB
+[   4/20] frame_0003.ppm           800x600   compute    8.232 ms  PSNR  8.30 -> 29.32 dB
+[   5/20] frame_0004.ppm           800x600   compute    8.194 ms  PSNR  9.28 -> 31.23 dB
+[   6/20] frame_0005.ppm           800x600   compute    8.467 ms  PSNR  8.70 -> 29.94 dB
+[   7/20] frame_0006.ppm           800x600   compute    8.149 ms  PSNR 10.55 -> 31.14 dB
+[   8/20] frame_0007.ppm           800x600   compute    8.145 ms  PSNR  8.83 -> 30.83 dB
+[   9/20] frame_0008.ppm           800x600   compute    8.149 ms  PSNR  7.88 -> 30.24 dB
+[  10/20] frame_0009.ppm           800x600   compute    9.235 ms  PSNR  8.18 -> 29.57 dB
+[  11/20] frame_0010.ppm           800x600   compute    8.592 ms  PSNR  8.38 -> 30.96 dB
+[  12/20] frame_0011.ppm           800x600   compute    8.300 ms  PSNR  8.42 -> 31.75 dB
+[  13/20] frame_0012.ppm           800x600   compute    8.490 ms  PSNR  9.10 -> 31.02 dB
+[  14/20] frame_0013.ppm           800x600   compute    8.158 ms  PSNR  7.32 -> 27.76 dB
+[  15/20] frame_0014.ppm           800x600   compute    8.196 ms  PSNR  6.96 -> 28.76 dB
+[  16/20] frame_0015.ppm           800x600   compute    8.328 ms  PSNR  8.51 -> 29.72 dB
+[  17/20] frame_0016.ppm           800x600   compute    8.101 ms  PSNR  9.45 -> 30.98 dB
+[  18/20] frame_0017.ppm           800x600   compute    8.225 ms  PSNR  9.11 -> 31.96 dB
+[  19/20] frame_0018.ppm           800x600   compute    8.087 ms  PSNR 10.24 -> 32.05 dB
+[  20/20] frame_0019.ppm           800x600   compute    8.187 ms  PSNR  8.84 -> 29.77 dB
+
+================ Summary ================
+backend            : cpu (bilinear)
+images processed   : 20 of 20 (1 distinct size)
+errors             : 0
+total megapixels   : 9.60 MP
+wall time          : 259.4 ms  (77.1 images/s, 37.0 MP/s end-to-end incl. disk I/O)
+map build          : 2.882 ms (once per resolution)
+compute time       : 165.42 ms total, 8.271 ms/image, 58.0 MP/s
+PSNR vs truth      : distorted input 8.75 dB -> corrected 30.48 dB (mean of 20)
+result             : OK

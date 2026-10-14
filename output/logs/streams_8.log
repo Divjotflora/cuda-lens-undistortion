@@ -1,0 +1,21 @@
+=========== CUDA lens undistort ===========
+input              : data/distorted (200 images)
+output             : (not written)
+lens               : focal_scale=0.6000 k1=-0.28000 k2=0.07000 k3=0.00000 p1=0.00150 p2=-0.00100 zoom=1.000
+backend / interp   : kernel_map / bilinear
+GPU 0              : Tesla T4 (sm_75, 40 SMs, 14.6 GB)
+CUDA runtime/driver: 13000 / 13000
+streams            : 8 (pinned buffers 1.4 MB each)
+-----------------------------------------
+
+================ Summary ================
+backend            : kernel_map (bilinear)
+images processed   : 200 of 200 (1 distinct size)
+errors             : 0
+total megapixels   : 96.00 MP
+wall time          : 900.4 ms  (222.1 images/s, 106.6 MP/s end-to-end incl. disk I/O)
+map build          : 0.426 ms (once per resolution)
+compute time       : 8.10 ms total, 0.040 ms/image, 11857.7 MP/s
+H2D + D2H copies   : 50.26 ms total
+PSNR vs truth      : distorted input 9.08 dB -> corrected 30.90 dB (mean of 200)
+result             : OK

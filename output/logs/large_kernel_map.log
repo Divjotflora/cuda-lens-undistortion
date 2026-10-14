@@ -1,0 +1,42 @@
+=========== CUDA lens undistort ===========
+input              : data_large/distorted (20 images)
+output             : output/corrected_large
+lens               : focal_scale=0.6000 k1=-0.28000 k2=0.07000 k3=0.00000 p1=0.00150 p2=-0.00100 zoom=1.000
+backend / interp   : kernel_map / bilinear
+GPU 0              : Tesla T4 (sm_75, 40 SMs, 14.6 GB)
+CUDA runtime/driver: 13000 / 13000
+streams            : 4 (pinned buffers 10.5 MB each)
+-----------------------------------------
+[   1/20] large_0000.ppm          2560x1440  compute    0.343 ms  xfer   1.852 ms  verify maxdiff=1
+[   2/20] large_0001.ppm          2560x1440  compute    0.339 ms  xfer   1.778 ms  verify maxdiff=1
+[   3/20] large_0002.ppm          2560x1440  compute    0.339 ms  xfer   1.809 ms  verify maxdiff=1
+[   4/20] large_0003.ppm          2560x1440  compute    0.339 ms  xfer   1.774 ms  verify maxdiff=1
+[   5/20] large_0004.ppm          2560x1440  compute    0.344 ms  xfer   1.809 ms
+[   6/20] large_0005.ppm          2560x1440  compute    0.341 ms  xfer   1.772 ms
+[   7/20] large_0006.ppm          2560x1440  compute    0.339 ms  xfer   1.768 ms
+[   8/20] large_0007.ppm          2560x1440  compute    0.338 ms  xfer   1.771 ms
+[   9/20] large_0008.ppm          2560x1440  compute    0.341 ms  xfer   1.769 ms
+[  10/20] large_0009.ppm          2560x1440  compute    0.344 ms  xfer   1.763 ms
+[  11/20] large_0010.ppm          2560x1440  compute    0.338 ms  xfer   1.767 ms
+[  12/20] large_0011.ppm          2560x1440  compute    0.338 ms  xfer   1.762 ms
+[  13/20] large_0012.ppm          2560x1440  compute    0.337 ms  xfer   1.760 ms
+[  14/20] large_0013.ppm          2560x1440  compute    0.336 ms  xfer   1.771 ms
+[  15/20] large_0014.ppm          2560x1440  compute    0.337 ms  xfer   1.765 ms
+[  16/20] large_0015.ppm          2560x1440  compute    0.338 ms  xfer   1.761 ms
+[  17/20] large_0016.ppm          2560x1440  compute    0.338 ms  xfer   1.764 ms
+[  18/20] large_0017.ppm          2560x1440  compute    0.339 ms  xfer   1.765 ms
+[  19/20] large_0018.ppm          2560x1440  compute    0.337 ms  xfer   1.782 ms
+[  20/20] large_0019.ppm          2560x1440  compute    0.338 ms  xfer   1.765 ms
+
+================ Summary ================
+backend            : kernel_map (bilinear)
+images processed   : 20 of 20 (1 distinct size)
+errors             : 0
+total megapixels   : 73.73 MP
+wall time          : 628.2 ms  (31.8 images/s, 117.4 MP/s end-to-end incl. disk I/O)
+map build          : 0.537 ms (once per resolution)
+compute time       : 6.78 ms total, 0.339 ms/image, 10868.7 MP/s
+H2D + D2H copies   : 35.53 ms total
+verify vs CPU      : 4 images, max |diff| 1, worst mean |diff| 0.0000 -> PASS (tolerance 2)
+speed-up vs 1 CPU  : 203.7x (compute only, on the verified images: CPU 69.29 ms vs GPU 0.340 ms)
+result             : OK

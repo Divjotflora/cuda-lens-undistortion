@@ -1,0 +1,222 @@
+=========== CUDA lens undistort ===========
+input              : data/distorted (200 images)
+output             : (not written)
+lens               : focal_scale=0.6000 k1=-0.28000 k2=0.07000 k3=0.00000 p1=0.00150 p2=-0.00100 zoom=1.000
+backend / interp   : kernel_fused / bilinear
+GPU 0              : Tesla T4 (sm_75, 40 SMs, 14.6 GB)
+CUDA runtime/driver: 13000 / 13000
+streams            : 4 (pinned buffers 1.4 MB each)
+-----------------------------------------
+[   1/200] frame_0000.ppm           800x600   compute    0.095 ms  xfer   0.256 ms  PSNR  7.55 -> 28.25 dB  verify maxdiff=1
+[   2/200] frame_0001.ppm           800x600   compute    0.036 ms  xfer   0.250 ms  PSNR  7.87 -> 30.21 dB  verify maxdiff=1
+[   3/200] frame_0002.ppm           800x600   compute    0.033 ms  xfer   0.247 ms  PSNR 11.59 -> 34.20 dB  verify maxdiff=1
+[   4/200] frame_0003.ppm           800x600   compute    0.035 ms  xfer   0.248 ms  PSNR  8.30 -> 29.31 dB  verify maxdiff=1
+[   5/200] frame_0004.ppm           800x600   compute    0.036 ms  xfer   0.248 ms  PSNR  9.28 -> 31.23 dB  verify maxdiff=1
+[   6/200] frame_0005.ppm           800x600   compute    0.033 ms  xfer   0.249 ms  PSNR  8.70 -> 29.94 dB  verify maxdiff=1
+[   7/200] frame_0006.ppm           800x600   compute    0.032 ms  xfer   0.249 ms  PSNR 10.55 -> 31.14 dB  verify maxdiff=1
+[   8/200] frame_0007.ppm           800x600   compute    0.036 ms  xfer   0.248 ms  PSNR  8.83 -> 30.83 dB  verify maxdiff=1
+[   9/200] frame_0008.ppm           800x600   compute    0.036 ms  xfer   0.249 ms  PSNR  7.88 -> 30.24 dB  verify maxdiff=1
+[  10/200] frame_0009.ppm           800x600   compute    0.037 ms  xfer   0.256 ms  PSNR  8.18 -> 29.57 dB  verify maxdiff=1
+[  11/200] frame_0010.ppm           800x600   compute    0.035 ms  xfer   0.248 ms  PSNR  8.38 -> 30.96 dB  verify maxdiff=1
+[  12/200] frame_0011.ppm           800x600   compute    0.033 ms  xfer   0.250 ms  PSNR  8.42 -> 31.75 dB  verify maxdiff=1
+[  13/200] frame_0012.ppm           800x600   compute    0.032 ms  xfer   0.294 ms  PSNR  9.10 -> 31.02 dB  verify maxdiff=1
+[  14/200] frame_0013.ppm           800x600   compute    0.034 ms  xfer   0.252 ms  PSNR  7.32 -> 27.76 dB  verify maxdiff=1
+[  15/200] frame_0014.ppm           800x600   compute    0.031 ms  xfer   0.248 ms  PSNR  6.96 -> 28.76 dB  verify maxdiff=1
+[  16/200] frame_0015.ppm           800x600   compute    0.035 ms  xfer   0.250 ms  PSNR  8.51 -> 29.72 dB  verify maxdiff=1
+[  17/200] frame_0016.ppm           800x600   compute    0.036 ms  xfer   0.248 ms  PSNR  9.45 -> 30.98 dB
+[  18/200] frame_0017.ppm           800x600   compute    0.033 ms  xfer   0.249 ms  PSNR  9.11 -> 31.96 dB
+[  19/200] frame_0018.ppm           800x600   compute    0.035 ms  xfer   0.248 ms  PSNR 10.24 -> 32.05 dB
+[  20/200] frame_0019.ppm           800x600   compute    0.036 ms  xfer   0.248 ms  PSNR  8.84 -> 29.77 dB
+[  21/200] frame_0020.ppm           800x600   compute    0.036 ms  xfer   0.250 ms  PSNR  8.57 -> 30.47 dB
+[  22/200] frame_0021.ppm           800x600   compute    0.036 ms  xfer   0.250 ms  PSNR 10.27 -> 32.68 dB
+[  23/200] frame_0022.ppm           800x600   compute    0.035 ms  xfer   0.249 ms  PSNR 10.76 -> 31.70 dB
+[  24/200] frame_0023.ppm           800x600   compute    0.036 ms  xfer   0.249 ms  PSNR  7.84 -> 31.11 dB
+[  25/200] frame_0024.ppm           800x600   compute    0.035 ms  xfer   0.249 ms  PSNR 10.96 -> 33.54 dB
+[  26/200] frame_0025.ppm           800x600   compute    0.034 ms  xfer   0.251 ms  PSNR  9.40 -> 32.54 dB
+[  27/200] frame_0026.ppm           800x600   compute    0.035 ms  xfer   0.250 ms  PSNR  7.41 -> 29.02 dB
+[  28/200] frame_0027.ppm           800x600   compute    0.035 ms  xfer   0.249 ms  PSNR  9.47 -> 31.79 dB
+[  29/200] frame_0028.ppm           800x600   compute    0.033 ms  xfer   0.250 ms  PSNR  8.94 -> 30.90 dB
+[  30/200] frame_0029.ppm           800x600   compute    0.033 ms  xfer   0.250 ms  PSNR  8.98 -> 30.82 dB
+[  31/200] frame_0030.ppm           800x600   compute    0.033 ms  xfer   0.250 ms  PSNR  9.94 -> 32.59 dB
+[  32/200] frame_0031.ppm           800x600   compute    0.035 ms  xfer   0.249 ms  PSNR 10.02 -> 30.68 dB
+[  33/200] frame_0032.ppm           800x600   compute    0.034 ms  xfer   0.250 ms  PSNR 10.13 -> 30.88 dB
+[  34/200] frame_0033.ppm           800x600   compute    0.033 ms  xfer   0.250 ms  PSNR  8.93 -> 29.14 dB
+[  35/200] frame_0034.ppm           800x600   compute    0.035 ms  xfer   0.318 ms  PSNR  8.11 -> 29.23 dB
+[  36/200] frame_0035.ppm           800x600   compute    0.037 ms  xfer   0.250 ms  PSNR  7.71 -> 30.24 dB
+[  37/200] frame_0036.ppm           800x600   compute    0.035 ms  xfer   0.249 ms  PSNR  8.81 -> 30.89 dB
+[  38/200] frame_0037.ppm           800x600   compute    0.036 ms  xfer   0.250 ms  PSNR 10.96 -> 32.81 dB
+[  39/200] frame_0038.ppm           800x600   compute    0.035 ms  xfer   0.248 ms  PSNR 11.72 -> 34.35 dB
+[  40/200] frame_0039.ppm           800x600   compute    0.036 ms  xfer   0.249 ms  PSNR  9.34 -> 29.53 dB
+[  41/200] frame_0040.ppm           800x600   compute    0.034 ms  xfer   0.249 ms  PSNR  9.06 -> 32.41 dB
+[  42/200] frame_0041.ppm           800x600   compute    0.037 ms  xfer   0.249 ms  PSNR  9.95 -> 32.48 dB
+[  43/200] frame_0042.ppm           800x600   compute    0.035 ms  xfer   0.247 ms  PSNR  8.52 -> 30.61 dB
+[  44/200] frame_0043.ppm           800x600   compute    0.037 ms  xfer   0.249 ms  PSNR  9.45 -> 32.33 dB
+[  45/200] frame_0044.ppm           800x600   compute    0.036 ms  xfer   0.248 ms  PSNR  8.29 -> 29.35 dB
+[  46/200] frame_0045.ppm           800x600   compute    0.035 ms  xfer   0.249 ms  PSNR 10.01 -> 32.44 dB
+[  47/200] frame_0046.ppm           800x600   compute    0.033 ms  xfer   0.251 ms  PSNR  8.88 -> 29.86 dB
+[  48/200] frame_0047.ppm           800x600   compute    0.037 ms  xfer   0.248 ms  PSNR  8.96 -> 31.06 dB
+[  49/200] frame_0048.ppm           800x600   compute    0.039 ms  xfer   0.265 ms  PSNR  5.99 -> 27.22 dB
+[  50/200] frame_0049.ppm           800x600   compute    0.037 ms  xfer   0.248 ms  PSNR  9.24 -> 31.35 dB
+[  51/200] frame_0050.ppm           800x600   compute    0.036 ms  xfer   0.247 ms  PSNR  7.69 -> 31.33 dB
+[  52/200] frame_0051.ppm           800x600   compute    0.036 ms  xfer   0.249 ms  PSNR  9.57 -> 32.07 dB
+[  53/200] frame_0052.ppm           800x600   compute    0.036 ms  xfer   0.248 ms  PSNR  9.25 -> 32.49 dB
+[  54/200] frame_0053.ppm           800x600   compute    0.034 ms  xfer   0.249 ms  PSNR  7.15 -> 29.03 dB
+[  55/200] frame_0054.ppm           800x600   compute    0.034 ms  xfer   0.247 ms  PSNR  7.81 -> 28.35 dB
+[  56/200] frame_0055.ppm           800x600   compute    0.034 ms  xfer   0.249 ms  PSNR  7.88 -> 30.28 dB
+[  57/200] frame_0056.ppm           800x600   compute    0.035 ms  xfer   0.248 ms  PSNR  7.81 -> 30.47 dB
+[  58/200] frame_0057.ppm           800x600   compute    0.036 ms  xfer   0.259 ms  PSNR 10.02 -> 31.55 dB
+[  59/200] frame_0058.ppm           800x600   compute    0.035 ms  xfer   0.257 ms  PSNR  8.84 -> 30.31 dB
+[  60/200] frame_0059.ppm           800x600   compute    0.037 ms  xfer   0.248 ms  PSNR 11.63 -> 33.03 dB
+[  61/200] frame_0060.ppm           800x600   compute    0.036 ms  xfer   0.249 ms  PSNR  9.29 -> 31.55 dB
+[  62/200] frame_0061.ppm           800x600   compute    0.039 ms  xfer   0.249 ms  PSNR  7.58 -> 30.55 dB
+[  63/200] frame_0062.ppm           800x600   compute    0.033 ms  xfer   0.248 ms  PSNR 10.56 -> 30.59 dB
+[  64/200] frame_0063.ppm           800x600   compute    0.035 ms  xfer   0.250 ms  PSNR  9.46 -> 32.61 dB
+[  65/200] frame_0064.ppm           800x600   compute    0.035 ms  xfer   0.247 ms  PSNR  7.51 -> 28.95 dB
+[  66/200] frame_0065.ppm           800x600   compute    0.037 ms  xfer   0.250 ms  PSNR  9.02 -> 31.95 dB
+[  67/200] frame_0066.ppm           800x600   compute    0.034 ms  xfer   0.248 ms  PSNR 10.38 -> 30.56 dB
+[  68/200] frame_0067.ppm           800x600   compute    0.035 ms  xfer   0.249 ms  PSNR  8.52 -> 28.92 dB
+[  69/200] frame_0068.ppm           800x600   compute    0.037 ms  xfer   0.257 ms  PSNR  6.63 -> 28.30 dB
+[  70/200] frame_0069.ppm           800x600   compute    0.033 ms  xfer   0.251 ms  PSNR  8.31 -> 29.64 dB
+[  71/200] frame_0070.ppm           800x600   compute    0.035 ms  xfer   0.250 ms  PSNR  6.40 -> 27.60 dB
+[  72/200] frame_0071.ppm           800x600   compute    0.036 ms  xfer   0.250 ms  PSNR 11.77 -> 32.25 dB
+[  73/200] frame_0072.ppm           800x600   compute    0.035 ms  xfer   0.250 ms  PSNR  8.99 -> 30.35 dB
+[  74/200] frame_0073.ppm           800x600   compute    0.039 ms  xfer   0.250 ms  PSNR  9.81 -> 31.79 dB
+[  75/200] frame_0074.ppm           800x600   compute    0.033 ms  xfer   0.249 ms  PSNR  9.31 -> 32.01 dB
+[  76/200] frame_0075.ppm           800x600   compute    0.035 ms  xfer   0.249 ms  PSNR  8.57 -> 29.04 dB
+[  77/200] frame_0076.ppm           800x600   compute    0.035 ms  xfer   0.249 ms  PSNR  8.84 -> 30.26 dB
+[  78/200] frame_0077.ppm           800x600   compute    0.034 ms  xfer   0.258 ms  PSNR  8.83 -> 31.44 dB
+[  79/200] frame_0078.ppm           800x600   compute    0.038 ms  xfer   0.370 ms  PSNR  7.72 -> 27.97 dB
+[  80/200] frame_0079.ppm           800x600   compute    0.037 ms  xfer   0.249 ms  PSNR 10.01 -> 33.06 dB
+[  81/200] frame_0080.ppm           800x600   compute    0.033 ms  xfer   0.252 ms  PSNR  7.80 -> 31.08 dB
+[  82/200] frame_0081.ppm           800x600   compute    0.035 ms  xfer   0.250 ms  PSNR  8.48 -> 31.09 dB
+[  83/200] frame_0082.ppm           800x600   compute    0.035 ms  xfer   0.247 ms  PSNR  8.38 -> 29.87 dB
+[  84/200] frame_0083.ppm           800x600   compute    0.037 ms  xfer   0.249 ms  PSNR 10.75 -> 30.98 dB
+[  85/200] frame_0084.ppm           800x600   compute    0.035 ms  xfer   0.249 ms  PSNR  7.33 -> 29.52 dB
+[  86/200] frame_0085.ppm           800x600   compute    0.037 ms  xfer   0.248 ms  PSNR 11.18 -> 32.93 dB
+[  87/200] frame_0086.ppm           800x600   compute    0.035 ms  xfer   0.248 ms  PSNR  8.70 -> 31.26 dB
+[  88/200] frame_0087.ppm           800x600   compute    0.035 ms  xfer   0.249 ms  PSNR  8.05 -> 29.86 dB
+[  89/200] frame_0088.ppm           800x600   compute    0.033 ms  xfer   0.251 ms  PSNR  9.54 -> 32.60 dB
+[  90/200] frame_0089.ppm           800x600   compute    0.036 ms  xfer   0.249 ms  PSNR  9.30 -> 31.49 dB
+[  91/200] frame_0090.ppm           800x600   compute    0.035 ms  xfer   0.248 ms  PSNR  8.42 -> 29.38 dB
+[  92/200] frame_0091.ppm           800x600   compute    0.036 ms  xfer   0.249 ms  PSNR  7.45 -> 30.50 dB
+[  93/200] frame_0092.ppm           800x600   compute    0.034 ms  xfer   0.248 ms  PSNR  9.93 -> 31.97 dB
+[  94/200] frame_0093.ppm           800x600   compute    0.039 ms  xfer   0.249 ms  PSNR  9.77 -> 31.19 dB
+[  95/200] frame_0094.ppm           800x600   compute    0.035 ms  xfer   0.249 ms  PSNR 10.68 -> 33.58 dB
+[  96/200] frame_0095.ppm           800x600   compute    0.037 ms  xfer   0.248 ms  PSNR  9.26 -> 31.07 dB
+[  97/200] frame_0096.ppm           800x600   compute    0.037 ms  xfer   0.246 ms  PSNR  8.70 -> 29.46 dB
+[  98/200] frame_0097.ppm           800x600   compute    0.034 ms  xfer   0.250 ms  PSNR  9.89 -> 32.06 dB
+[  99/200] frame_0098.ppm           800x600   compute    0.033 ms  xfer   0.248 ms  PSNR  8.54 -> 31.25 dB
+[ 100/200] frame_0099.ppm           800x600   compute    0.036 ms  xfer   0.249 ms  PSNR  9.93 -> 31.56 dB
+[ 101/200] frame_0100.ppm           800x600   compute    0.035 ms  xfer   0.247 ms  PSNR 10.34 -> 32.24 dB
+[ 102/200] frame_0101.ppm           800x600   compute    0.034 ms  xfer   0.248 ms  PSNR  8.47 -> 29.26 dB
+[ 103/200] frame_0102.ppm           800x600   compute    0.036 ms  xfer   0.247 ms  PSNR  7.91 -> 29.35 dB
+[ 104/200] frame_0103.ppm           800x600   compute    0.036 ms  xfer   0.248 ms  PSNR 12.67 -> 34.12 dB
+[ 105/200] frame_0104.ppm           800x600   compute    0.036 ms  xfer   0.249 ms  PSNR 10.42 -> 32.17 dB
+[ 106/200] frame_0105.ppm           800x600   compute    0.037 ms  xfer   0.249 ms  PSNR  7.27 -> 30.43 dB
+[ 107/200] frame_0106.ppm           800x600   compute    0.035 ms  xfer   0.250 ms  PSNR  9.11 -> 30.53 dB
+[ 108/200] frame_0107.ppm           800x600   compute    0.035 ms  xfer   0.249 ms  PSNR  8.91 -> 30.48 dB
+[ 109/200] frame_0108.ppm           800x600   compute    0.034 ms  xfer   0.251 ms  PSNR 10.25 -> 31.70 dB
+[ 110/200] frame_0109.ppm           800x600   compute    0.039 ms  xfer   0.249 ms  PSNR  9.15 -> 31.84 dB
+[ 111/200] frame_0110.ppm           800x600   compute    0.033 ms  xfer   0.250 ms  PSNR  6.96 -> 28.23 dB
+[ 112/200] frame_0111.ppm           800x600   compute    0.035 ms  xfer   0.250 ms  PSNR  8.14 -> 29.59 dB
+[ 113/200] frame_0112.ppm           800x600   compute    0.035 ms  xfer   0.249 ms  PSNR  7.96 -> 28.30 dB
+[ 114/200] frame_0113.ppm           800x600   compute    0.038 ms  xfer   0.250 ms  PSNR 10.12 -> 32.98 dB
+[ 115/200] frame_0114.ppm           800x600   compute    0.039 ms  xfer   0.430 ms  PSNR  8.05 -> 30.10 dB
+[ 116/200] frame_0115.ppm           800x600   compute    0.037 ms  xfer   0.250 ms  PSNR  9.17 -> 30.86 dB
+[ 117/200] frame_0116.ppm           800x600   compute    0.036 ms  xfer   0.249 ms  PSNR  8.78 -> 30.98 dB
+[ 118/200] frame_0117.ppm           800x600   compute    0.037 ms  xfer   0.249 ms  PSNR  9.69 -> 30.40 dB
+[ 119/200] frame_0118.ppm           800x600   compute    0.032 ms  xfer   0.249 ms  PSNR  7.94 -> 28.45 dB
+[ 120/200] frame_0119.ppm           800x600   compute    0.036 ms  xfer   0.255 ms  PSNR  6.83 -> 27.81 dB
+[ 121/200] frame_0120.ppm           800x600   compute    0.034 ms  xfer   0.250 ms  PSNR  7.55 -> 29.55 dB
+[ 122/200] frame_0121.ppm           800x600   compute    0.038 ms  xfer   0.249 ms  PSNR 10.07 -> 32.00 dB
+[ 123/200] frame_0122.ppm           800x600   compute    0.036 ms  xfer   0.248 ms  PSNR  9.30 -> 32.22 dB
+[ 124/200] frame_0123.ppm           800x600   compute    0.036 ms  xfer   0.249 ms  PSNR  7.59 -> 27.16 dB
+[ 125/200] frame_0124.ppm           800x600   compute    0.034 ms  xfer   0.249 ms  PSNR  9.93 -> 31.19 dB
+[ 126/200] frame_0125.ppm           800x600   compute    0.034 ms  xfer   0.250 ms  PSNR 11.80 -> 33.42 dB
+[ 127/200] frame_0126.ppm           800x600   compute    0.035 ms  xfer   0.270 ms  PSNR  8.73 -> 30.37 dB
+[ 128/200] frame_0127.ppm           800x600   compute    0.036 ms  xfer   0.248 ms  PSNR  8.81 -> 31.18 dB
+[ 129/200] frame_0128.ppm           800x600   compute    0.034 ms  xfer   0.249 ms  PSNR  8.23 -> 30.23 dB
+[ 130/200] frame_0129.ppm           800x600   compute    0.037 ms  xfer   0.250 ms  PSNR  8.92 -> 30.56 dB
+[ 131/200] frame_0130.ppm           800x600   compute    0.034 ms  xfer   0.249 ms  PSNR 10.34 -> 32.93 dB
+[ 132/200] frame_0131.ppm           800x600   compute    0.036 ms  xfer   0.248 ms  PSNR 12.02 -> 33.73 dB
+[ 133/200] frame_0132.ppm           800x600   compute    0.036 ms  xfer   0.248 ms  PSNR  9.35 -> 30.30 dB
+[ 134/200] frame_0133.ppm           800x600   compute    0.038 ms  xfer   0.252 ms  PSNR 10.51 -> 31.80 dB
+[ 135/200] frame_0134.ppm           800x600   compute    0.035 ms  xfer   0.250 ms  PSNR  9.04 -> 31.18 dB
+[ 136/200] frame_0135.ppm           800x600   compute    0.034 ms  xfer   0.250 ms  PSNR  8.68 -> 29.30 dB
+[ 137/200] frame_0136.ppm           800x600   compute    0.036 ms  xfer   0.249 ms  PSNR  9.07 -> 31.27 dB
+[ 138/200] frame_0137.ppm           800x600   compute    0.034 ms  xfer   0.257 ms  PSNR  7.25 -> 30.63 dB
+[ 139/200] frame_0138.ppm           800x600   compute    0.034 ms  xfer   0.247 ms  PSNR  7.76 -> 29.68 dB
+[ 140/200] frame_0139.ppm           800x600   compute    0.035 ms  xfer   0.248 ms  PSNR 10.95 -> 32.12 dB
+[ 141/200] frame_0140.ppm           800x600   compute    0.037 ms  xfer   0.264 ms  PSNR  8.21 -> 29.19 dB
+[ 142/200] frame_0141.ppm           800x600   compute    0.034 ms  xfer   0.249 ms  PSNR  8.52 -> 30.56 dB
+[ 143/200] frame_0142.ppm           800x600   compute    0.035 ms  xfer   0.247 ms  PSNR  8.55 -> 28.77 dB
+[ 144/200] frame_0143.ppm           800x600   compute    0.036 ms  xfer   0.247 ms  PSNR  8.67 -> 30.02 dB
+[ 145/200] frame_0144.ppm           800x600   compute    0.033 ms  xfer   0.249 ms  PSNR  9.79 -> 31.24 dB
+[ 146/200] frame_0145.ppm           800x600   compute    0.031 ms  xfer   0.251 ms  PSNR 11.32 -> 33.86 dB
+[ 147/200] frame_0146.ppm           800x600   compute    0.033 ms  xfer   0.249 ms  PSNR  7.97 -> 28.84 dB
+[ 148/200] frame_0147.ppm           800x600   compute    0.035 ms  xfer   0.247 ms  PSNR  9.31 -> 31.34 dB
+[ 149/200] frame_0148.ppm           800x600   compute    0.035 ms  xfer   0.249 ms  PSNR  8.50 -> 30.56 dB
+[ 150/200] frame_0149.ppm           800x600   compute    0.037 ms  xfer   0.250 ms  PSNR  9.59 -> 33.09 dB
+[ 151/200] frame_0150.ppm           800x600   compute    0.033 ms  xfer   0.248 ms  PSNR 10.16 -> 32.93 dB
+[ 152/200] frame_0151.ppm           800x600   compute    0.035 ms  xfer   0.248 ms  PSNR 12.07 -> 33.16 dB
+[ 153/200] frame_0152.ppm           800x600   compute    0.035 ms  xfer   0.249 ms  PSNR  8.40 -> 31.34 dB
+[ 154/200] frame_0153.ppm           800x600   compute    0.036 ms  xfer   0.263 ms  PSNR 11.25 -> 31.96 dB
+[ 155/200] frame_0154.ppm           800x600   compute    0.035 ms  xfer   0.248 ms  PSNR  7.45 -> 29.38 dB
+[ 156/200] frame_0155.ppm           800x600   compute    0.033 ms  xfer   0.249 ms  PSNR 10.72 -> 32.31 dB
+[ 157/200] frame_0156.ppm           800x600   compute    0.034 ms  xfer   0.249 ms  PSNR  7.03 -> 29.02 dB
+[ 158/200] frame_0157.ppm           800x600   compute    0.038 ms  xfer   0.249 ms  PSNR  8.85 -> 30.36 dB
+[ 159/200] frame_0158.ppm           800x600   compute    0.034 ms  xfer   0.249 ms  PSNR  9.69 -> 31.72 dB
+[ 160/200] frame_0159.ppm           800x600   compute    0.036 ms  xfer   0.247 ms  PSNR  8.22 -> 28.20 dB
+[ 161/200] frame_0160.ppm           800x600   compute    0.036 ms  xfer   0.248 ms  PSNR  9.37 -> 31.31 dB
+[ 162/200] frame_0161.ppm           800x600   compute    0.031 ms  xfer   0.250 ms  PSNR  7.43 -> 29.67 dB
+[ 163/200] frame_0162.ppm           800x600   compute    0.033 ms  xfer   0.248 ms  PSNR  9.15 -> 31.62 dB
+[ 164/200] frame_0163.ppm           800x600   compute    0.037 ms  xfer   0.255 ms  PSNR  6.82 -> 29.40 dB
+[ 165/200] frame_0164.ppm           800x600   compute    0.038 ms  xfer   0.254 ms  PSNR  8.18 -> 30.24 dB
+[ 166/200] frame_0165.ppm           800x600   compute    0.034 ms  xfer   0.258 ms  PSNR 12.51 -> 34.29 dB
+[ 167/200] frame_0166.ppm           800x600   compute    0.035 ms  xfer   0.249 ms  PSNR  8.27 -> 31.14 dB
+[ 168/200] frame_0167.ppm           800x600   compute    0.034 ms  xfer   0.249 ms  PSNR  7.66 -> 29.83 dB
+[ 169/200] frame_0168.ppm           800x600   compute    0.035 ms  xfer   0.249 ms  PSNR  9.72 -> 30.95 dB
+[ 170/200] frame_0169.ppm           800x600   compute    0.031 ms  xfer   0.248 ms  PSNR  8.41 -> 31.17 dB
+[ 171/200] frame_0170.ppm           800x600   compute    0.033 ms  xfer   0.249 ms  PSNR  8.56 -> 30.96 dB
+[ 172/200] frame_0171.ppm           800x600   compute    0.036 ms  xfer   0.247 ms  PSNR  8.77 -> 30.03 dB
+[ 173/200] frame_0172.ppm           800x600   compute    0.034 ms  xfer   0.249 ms  PSNR  8.83 -> 29.42 dB
+[ 174/200] frame_0173.ppm           800x600   compute    0.038 ms  xfer   0.248 ms  PSNR  9.16 -> 31.47 dB
+[ 175/200] frame_0174.ppm           800x600   compute    0.033 ms  xfer   0.248 ms  PSNR 10.16 -> 32.24 dB
+[ 176/200] frame_0175.ppm           800x600   compute    0.037 ms  xfer   0.246 ms  PSNR 10.66 -> 32.38 dB
+[ 177/200] frame_0176.ppm           800x600   compute    0.035 ms  xfer   0.249 ms  PSNR  9.62 -> 30.38 dB
+[ 178/200] frame_0177.ppm           800x600   compute    0.040 ms  xfer   0.260 ms  PSNR  9.00 -> 31.26 dB
+[ 179/200] frame_0178.ppm           800x600   compute    0.032 ms  xfer   0.254 ms  PSNR  9.07 -> 32.13 dB
+[ 180/200] frame_0179.ppm           800x600   compute    0.036 ms  xfer   0.248 ms  PSNR  9.22 -> 30.91 dB
+[ 181/200] frame_0180.ppm           800x600   compute    0.035 ms  xfer   0.247 ms  PSNR  7.03 -> 27.61 dB
+[ 182/200] frame_0181.ppm           800x600   compute    0.034 ms  xfer   0.254 ms  PSNR  9.34 -> 30.48 dB
+[ 183/200] frame_0182.ppm           800x600   compute    0.035 ms  xfer   0.248 ms  PSNR  9.94 -> 32.76 dB
+[ 184/200] frame_0183.ppm           800x600   compute    0.035 ms  xfer   0.248 ms  PSNR  8.72 -> 32.02 dB
+[ 185/200] frame_0184.ppm           800x600   compute    0.035 ms  xfer   0.249 ms  PSNR 11.65 -> 33.22 dB
+[ 186/200] frame_0185.ppm           800x600   compute    0.039 ms  xfer   0.250 ms  PSNR  8.94 -> 29.42 dB
+[ 187/200] frame_0186.ppm           800x600   compute    0.034 ms  xfer   0.251 ms  PSNR  9.86 -> 32.77 dB
+[ 188/200] frame_0187.ppm           800x600   compute    0.033 ms  xfer   0.248 ms  PSNR  6.70 -> 29.12 dB
+[ 189/200] frame_0188.ppm           800x600   compute    0.038 ms  xfer   0.252 ms  PSNR  8.83 -> 30.25 dB
+[ 190/200] frame_0189.ppm           800x600   compute    0.037 ms  xfer   0.250 ms  PSNR  8.15 -> 30.24 dB
+[ 191/200] frame_0190.ppm           800x600   compute    0.035 ms  xfer   0.250 ms  PSNR  9.93 -> 31.60 dB
+[ 192/200] frame_0191.ppm           800x600   compute    0.037 ms  xfer   0.248 ms  PSNR  8.90 -> 30.40 dB
+[ 193/200] frame_0192.ppm           800x600   compute    0.037 ms  xfer   0.250 ms  PSNR  8.52 -> 30.76 dB
+[ 194/200] frame_0193.ppm           800x600   compute    0.034 ms  xfer   0.247 ms  PSNR 10.87 -> 32.06 dB
+[ 195/200] frame_0194.ppm           800x600   compute    0.032 ms  xfer   0.248 ms  PSNR  9.27 -> 32.60 dB
+[ 196/200] frame_0195.ppm           800x600   compute    0.035 ms  xfer   0.248 ms  PSNR  8.55 -> 29.06 dB
+[ 197/200] frame_0196.ppm           800x600   compute    0.039 ms  xfer   0.250 ms  PSNR  9.13 -> 31.29 dB
+[ 198/200] frame_0197.ppm           800x600   compute    0.037 ms  xfer   0.251 ms  PSNR 11.18 -> 34.56 dB
+[ 199/200] frame_0198.ppm           800x600   compute    0.036 ms  xfer   0.249 ms  PSNR 13.19 -> 35.66 dB
+[ 200/200] frame_0199.ppm           800x600   compute    0.036 ms  xfer   0.250 ms  PSNR  9.29 -> 31.11 dB
+
+================ Summary ================
+backend            : kernel_fused (bilinear)
+images processed   : 200 of 200 (1 distinct size)
+errors             : 0
+total megapixels   : 96.00 MP
+wall time          : 1082.5 ms  (184.8 images/s, 88.7 MP/s end-to-end incl. disk I/O)
+compute time       : 7.10 ms total, 0.036 ms/image, 13520.2 MP/s
+H2D + D2H copies   : 50.37 ms total
+PSNR vs truth      : distorted input 9.08 dB -> corrected 30.90 dB (mean of 200)
+verify vs CPU      : 16 images, max |diff| 1, worst mean |diff| 0.0001 -> PASS (tolerance 2)
+speed-up vs 1 CPU  : 221.4x (compute only, on the verified images: CPU 8.45 ms vs GPU 0.038 ms)
+result             : OK
